@@ -1,0 +1,167 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 13s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+    height: 100vh;
+}
+}
+.centro{
+    display: flex;
+}
+.espacio{
+    width: 100%;
+  height: 55px;
+  background-color: #1D1D1E;
+}
+.izquierda{
+  width: 50px;
+  height: 3820px;
+  display: inline-block;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #1D1D1E;
+
+}
+.derecha{
+    width: 150px;
+  height: 3820px;
+  display: inline-block;
+  padding: 150px;
+  box-sizing: border-box;
+  background-color: #1D1D1E;
+  margin-left: 0px;
+
+}
+
+.texto{
+  width: 950px;
+  height: 3820px;
+  background-color: #3A3A3F;
+}
+.anuncio{
+    position: relative;
+    left: -80px;
+    width: 80px;
+}
+
+
+
+#e{
+    position: relative;
+    left: -300px;
+    color: black;
+}
+
+#e2{
+    position: relative;
+    left: 100px;
+    top: -270px;
+    color: black;
+    margin: auto;
+ }
+#e3{
+    position: relative;
+    left: -300px;
+    top: -220px;
+    color: black;
+    margin: auto;
+}
+#e4{
+    position: relative;
+    left: 100px;
+    top: -500px;
+    color: black;
+    margin: auto;
+}
+
+a{
+    color: black;
+}
+
+
+.container{
+    width: 100px;
+    max-width: 1200px;
+    height: 400px;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+
+}
+.container .card{
+    width: 230px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    color: white;
+
+}
+.container .card:hover{
+    transform: translateY(-15px) ;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.container .card img{
+    width: 230px;
+    height: 180px;
+
+}
+.container .card h4{
+    font-weight: 600px;
+    
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300px;
+
+}
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitario</title>
+    <link rel="stylesheet" href="estilos5.css">
+    <link rel="icon" href="icono/icono4.icon">
+</head>
+
+<body>
+        <div class="slider">
+    <ul>
+        <li>
+            <center>
+                <img src="so/so1.jpg">
+            </center> 
+        </li>
+        <li>
+            <center>
+                <img src="so/so2.jpg">
+            </center>
+        </li>
+        <li>
+            <center>
+                <img src="so/so3.jpg">
+            </center>
+        </li>
+        <li>
+            <center>
+                <img src="so/so4.jpg">
+            </center>
+        </li>
+    </ul>
+</div>
+
+    //juego
+    <div class="tablero">
+        <button class="empezar">Empezar juego</button>
+        <div class="superior">
+            <div class="mazo">
+                <div class="espacio-carta">
+                    <div id="pila-inicial"></div>
+                    <div class="carta-mazo">
+                        <img src="img/dorso.png">
+                    </div>
+                </div>
+                <div class="espacio-carta" id="seleccionada"></div>
+            </div>
+            <div class="casa">
+                <div class="espacio-carta" id="casa-0"></div>
+                <div class="espacio-carta" id="casa-1"></div>
+                <div class="espacio-carta" id="casa-2"></div>
+                <div class="espacio-carta" id="casa-3"></div>
+            </div>
+        </div>
+        <div class="inferior">
+            <div class="espacio-carta" id="pila-0"></div>
+            <div class="espacio-carta" id="pila-1"></div>
+            <div class="espacio-carta" id="pila-2"></div>
+            <div class="espacio-carta" id="pila-3"></div>
+            <div class="espacio-carta" id="pila-4"></div>
+            <div class="espacio-carta" id="pila-5"></div>
+            <div class="espacio-carta" id="pila-6"></div>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+    //juego
+    <br>
+    <br>
+    <div class="espacio"></div>
+
+<div class="centro">
+
+    <div class="izquierda"></div>
+
+    <div class="texto">
+        <img src="so/so5.jpg" width="949px" height="300px">
+        <center>
+            <h2 style="color:red">
+                Juego de Solitario
+            </h2>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            El juego del solitario, es uno de los juegos de mesa más populares. Tal como indica su nombre, es para ser jugado por una sola persona. Para jugar al solitario se pueden utilizar diferentes clases de barajas, tanto la baraja española como la de póker.
+        </p>
+        <br>
+        <p style="color:#217D0A">
+            Es un género de juegos de cartas cuya característica común es que el objetivo es disponer las cartas en algún orden sistemático o, en algunos casos, emparejarlas para descartarlas.
+        </p>
+        <br>
+        <img src="so/so6.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <center>
+            <h3 style="color:blue;">
+                ¿Cuál es el objetivo del juego solitario?
+            </h3>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            El objetivo del solitario es conseguir ordenar las cartas en cuatro montones según su palo (picas, tréboles, corazones y diamantes) en orden ascendente, empezando por el as.
+        </p>
+        <br>
+        <center>
+            <h2 style="color:red">
+                Cómo jugar al solitario
+            </h2>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            ¿Y cuáles son los pasos para jugar al solitario? Empieza organizando las cartas en siete columnas. De derecha a izquierda, colócalas así:
+        </p>
+        <br>
+        <p style="color:#217D0A">
+           <li style="color:#217D0A">
+                 Seis cartas boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Cinco cartas boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Cuatro cartas boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Tres cartas boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Dos cartas boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Una carta boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Una carta boca abajo y una boca arriba.
+           </li>
+           <li style="color:#217D0A">
+                 Coloca el mazo de cartas que sobre boca abajo, en una esquina.
+           </li>
+        </p>
+        <br>
+        <br>
+        <img src="so/so7.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <p style="color:#217D0A">
+            Cuando tengas el tablero organizado en columnas, puedes comenzar a realizar movimientos: de manera descendente (K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2 y as) y alternando los colores de rojo a negro o los diferentes palos, coloca las cartas en las diferentes columnas. Solo podrás darle la vuelta a las cartas boca abajo cuando no tengas ninguna boca arriba encima.
+        </p>
+        <br>
+        <p style="color:#217D0A">
+            Cuando cojas un as, debes ponerlo en un montón aparte, que es sobre el que irás colocando el resto de cartas del mismo palo, esta vez en forma ascendente: as, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q y K.
+        </p>
+        <br>
+        <p style="color:#217D0A">
+            ¿Más reglas? Si una columna se queda vacía, solo podrás empezar a llenarla de nuevo colocando una K (un rey) en el hueco. Si la carta que vas a usar tiene otras encima, tendrás que moverlas todas juntas, de una columna a otra; y si no tienes opciones entre las cartas de las columnas, deberás robar del mazo.
+        </p>
+        <br>
+        <br>
+        <img src="so/so8.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <center>
+            <h2 style="color:red">
+                ¿Cuándo termina el solitario?
+            </h2>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            El solitario termina o bien cuando has conseguido colocar todas las cartas de cada uno de los cuatro palos de forma ascendente (¡enhorabuena, has ganado!) o bien cuando te quedes atascada y no puedas seguir colocando cartas en las columnas siguiendo el orden descendente.
+        </p>
+        <br>
+        <br>
+        <img src="so/so9.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <center>
+            <h3 style="color:blue">
+                ¿Que es el solitario clasico?
+            </h3>
+        </center>
+        <p style="color:#217D0A">
+            El Solitario, o Klondike, es uno de los juegos de cartas de solitario clásico más populares del mundo. En algunas partes, se conoce como American Patience; pero, muchas veces, se le denomina simplemente solitario. En esta versión de Solitario, la baraja pone en juego las cartas de una en una.
+        </p>
+        <br>
+        <br>
+        <img src="so/so10.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <center>
+            <h2 style="color:red">
+                Juegos de solitario en ordenador
+            </h2>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            Los juegos de paciencia y solitario han disfrutado de un renacimiento como resultado de ser fácilmente transferibles a un formato de software y reproducibles en computadoras u otros medios electrónicos. Quizás el más influyente inicialmente fue el "Solitario" de Microsoft, en realidad el conocido juego de Klondike . Su inclusión en Windows como Microsoft Solitaire a partir de 1990 tuvo un impacto especialmente grande en la popularización de los juegos de paciencia y solitario entre el público en general. Se ha producido una gran cantidad de versiones electrónicas de estos juegos, algunas, como "Solitaire", con nombres de propiedad diferentes al nombre real.
+        </p>
+        <br>
+        <br>
+        <img src="so/so11.jpg" width="949px" height="300px">
+        <br>
+        <br>
+        <center>
+            <h2 style="color:red">
+                Juegos Abiertos
+            </h2>
+        </center>
+        <br>
+        <p style="color:#217D0A">
+            En los juegos abiertos, todo el mazo de cartas es visible desde el principio y continúa siéndolo a lo largo del juego. Estos juegos requieren un análisis cuidadoso (como en el ajedrez) para lograr el éxito. Los juegos abiertos se pueden dividir en:
+        </p>
+        <br>
+        <p style="color:#217D0A">
+            <li style="color:#217D0A">
+                Constructores abiertos . Una familia de constructores en la que todas las cartas se enfrentan al inicio del juego.
+            </li>
+            <li style="color:#217D0A">
+                Empacadores abiertos . Así mismo una familia de empacadores en los que todas las cartas son visibles desde el principio.
+            </li>
+            <li style="color:#217D0A">
+                Abierto no constructores . Una rama de paciencias abiertas en la que el objetivo no es construir secuencias de palos.
+            </li>
+        </p>
+        <br>
+        <br>
+        <img src="so/so12.jpg" width="949px" height="290px">
+
+    </div>
+
+    <div class="derecha">
+        <div class="anuncio">
+            <img src="imagen11.jpg">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="anuncio">
+            <img src="imagen12.jpg">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="anuncio">
+            <img src="imagen16.jpg">
+        </div>
+            
+    </div>
+
+</div>
+</body>
+
+</html>

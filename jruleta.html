@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de la Ruleta</title>
+  <link rel="stylesheet" href="estilos1.css">
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <div class="slider">
+    <ul>
+        <li>
+          <center>
+            <img src="rl/rl1.jpg">
+          </center> 
+        </li>
+        <li>
+          <center>
+            <img src="rl/rl2.jpg">
+          </center>
+        </li>
+        <li>
+          <center>
+            <img src="rl/rl3.jpg">
+          </center>
+        </li>
+        <li>
+          <center>
+            <img src="rl/rl4.jpg">
+          </center>
+        </li>
+    </ul>
+</div>
+
+  //juego
+  <div id="premio">
+
+    <table style=" margin: 0 auto;">
+      <tr>
+        <td>
+          <p class="elije">ELIJE TU CORTESIA:</p>
+        </td>
+        <td><img src="cortesia.png" class="imgSorpresa"></td>
+
+      </tr>
+      <tr>
+        <td>
+          <p class="contador">TURNOS: 0</p>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="vara"></div>
+  <div>
+    <img src="imagen.png" id="ruleta">
+  </div>
+  <div>
+    <div id="sonido" style="display: none;">
+      <iframe src="ruleta.mp3" id="audio"></iframe>
+
+    </div>
+  </div>
+  <script src="jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="script1.js"></script>
+  //juego
+  <br>
+
+  <div class="espacio"></div>
+
+<div class="centro">
+
+  <div class="izquierda"></div>
+
+  <div class="texto">
+    <img src="rl/rl5.jpg" width="949px" height="300px">
+     <br>
+     <br>
+    <center>
+      <h2 style="color:red">
+        Juegos de la Ruleta
+      </h2>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      La ruleta es un juego de azar típico de los casinos, cuyo nombre viene del término francés roulette, que significa "ruedita" o "rueda pequeña". Su uso como elemento de juego de azar, aún en configuraciones distintas de la actual, no está documentado hasta bien entrada la Edad Media. Es de suponer que su referencia más antigua es la llamada Rueda de la Fortuna, de la que hay noticias a lo largo de toda la historia, prácticamente en todos los campos del saber humano.
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl6.jpg" width="949px" height="300px">
+    <br>
+    <br>
+    <p style="color:#AE06AE">
+      La “magia” del movimiento de las ruedas tuvo que impactar a todas las generaciones. La aparente quietud del centro, el aumento de velocidad conforme nos alejamos de él, la posibilidad de que se detenga en un punto al azar; todo esto tuvo que influir en el desarrollo de distintos juegos que tienen la rueda como base.
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      Las ruedas, y por extensión las ruletas, siempre han tenido conexión con el mundo mágico y esotérico. Así, una de ellas forma parte del tarot, más precisamente de los que se conocen como arcanos mayores.
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl7.jpg" width="949px" height="300px">
+    <br>
+    <br>
+    <center>
+      <h2 style="color:red">
+        Elementos de la ruleta
+      </h2>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      Los útiles imprescindibles para el juego de la ruleta son:
+    </p>
+    <br>
+    <center>
+      <h3 style="color:blue;">
+        Ruleta o cilindro
+      </h3>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      <li style="color:#AE06AE">
+        A cada lado de un número menor o igual a 18 hay un número mayor que 18 y viceversa, con dos excepciones: a) el cero, b) justo enfrente de él con el 5 y el 10 juntos.
+      </li>
+      <li style="color:#AE06AE">
+        Los números negros son aquellos en los que la reducción de la suma de sus dígitos es par. Así, por ejemplo, el 29 es negro (2 + 9 = 11, 1 + 1 = 2). Las excepciones son el 10 y el 28 (ambos negros).
+      </li>
+      <li style="color:#AE06AE">Partiendo el plato por la mitad, con una línea imaginaria entre el 0 y el 5, en cada una de las mitades debe haber la misma cantidad de números que pertenezcan a cada una de las 3 docenas (6 números de cada docena) y la misma cantidad de números que pertenezcan a cada una de las 3 columnas (6 números de cada columna).
+      </li>
+      <li style="color:#AE06AE">Los números rojos y negros deben estar alternados.
+      </li>
+      <li style="color:#AE06AE">
+        Los números pares e impares deben estar distribuidos de forma regular, de manera que no haya más de dos números pares o impares adyacentes.
+      </li>
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      Estas normas se cumplen en la ruleta europea (con un cero), pero no en la americana (con doble cero), donde la distribución es más irregular.
+    </p>
+    <br>
+    <center>
+      <h3 style="color:blue">
+        Paño o tapete
+      </h3>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      En este juego la ruleta está situada en el extremo de una mesa, recubierta esta por un tapete, originalmente de color verde oscuro, aunque se suele utilizar toda una gama de colores (verde, burdeos, azul marino). Dicho tapete tiene una serie de recuadros para efectuar las apuestas. Estas se hacen normalmente en forma de fichas, cambiables por dinero.
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      Los tapetes y ruletas son distintos, dependiendo de si son de un solo cero o de dos ceros. Las ruletas con doble cero son llamadas ruletas americanas, en las que juega un máximo de 8 personas, cada una con fichas de un color, y ellas mismas ponen sus fichas, que al final de la jugada son retiradas por el croupier con la mano. La ruleta francesa o europea es la que posee un solo cero, y se colocan fichas de “valor” del casino. Normalmente se las colocan los croupiers a los clientes y las retiran con un rastrillo.
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl8.jpg" width="949px" height="300px">
+    <br>
+    <br>
+    <center>
+      <h3 style="color:blue">
+        Bola
+      </h3>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      Es una esfera de color blanco o marfilado, de aproximadamente dos centímetros de diámetro. Antiguamente, se usaban de marfil, pero en la actualidad son de politetrafluoroetileno (teflón).
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      El modo de interactuar de la bola con la ruleta es el siguiente: el croupier lanza la bola por un resalte interior del plato, de tal forma que la bola gira por el resalte de madera, mientras empuja el rotor interior en la dirección contraria a la que gira la bola. Al perder velocidad, el croupier le avisa a los jugadores el clásico "No va más" y esperan a que la bola caiga y entre en una de las casillas correspondientes a un número al cual designa como el ganador de la partida.
+    </p>
+    <br>
+    <center>
+      <h3 style="color:blue">
+        Apuestas y pagos
+      </h3>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      Son posibles las apuestas múltiples durante una jugada, siendo los pagos proporcionales a la cantidad de números que se cubren con cada ficha y al número que estas jugado, según la siguiente tabla:
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl9.jpg" width="949px" height="300px">
+    <br>
+    <br>
+    <p style="color:#AE06AE">
+      Se llaman suertes sencillas aquellas que cubren 18 números (rojo, negro, par, impar, falta y pasa). La forma de apostar con una sola ficha a varios números consiste en situarla en las líneas o cuadros de separación entre ellos. Eso en el caso de medios y cuadros. En las líneas y calles se apuesta en el lateral, tocando las líneas que los marcan. El resto de apuestas se realizan en sus posiciones, indicadas en el paño.
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl10.jpg" width="949px" height="300px">
+    <br>
+    <br>
+    <center>
+      <h2 style="color:red">
+        Ruletas electrónicas
+      </h2>
+    </center>
+    <br>
+    <p style="color:#AE06AE">
+      Están muy difundidas en los salones de juego, son ruletas automáticas que lanzan de forma aleatoria la bola.
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      Las máquinas de los salones de juego disponen de un mecanismo capaz de expulsar la bola del número y colocar la bola en otras casillas en concreto. Adicionalmente dispone de los siguientes mecanismos: un soplador de aire, que impulsa la bola a diferentes velocidades aleatoriamente, mediante un sofisticado mecanismo que hace variar la fuerza del soplido (en las más avanzadas tienen ocho velocidades de impulso diferentes); además, tienen diferentes velocidades de giro del plato (también ocho); también tienen diferentes tiempos de juego, desde que empiezan las apuestas hasta que se cierran con el clásico "No va más", con lo que juegan con tres variables que, combinadas, dan una gran aleatoriedad, también existen otros modelos o versiones de ruletas electrónicas que funcionan igual que la ruleta física, solo que estas utilizan un programa de computadora, las cuales muestran la ruleta en una pantalla de televisión en video donde estas hacen las mismas funciones y se encuentran en ciertas salas de juego.
+    </p>
+    <br>
+    <p style="color:#AE06AE">
+      Las ruletas electrónicas están consideradas máquinas de juego, con lo cual tienen que dar un porcentaje mínimo de premios regulados por ley, y esto se consigue con los botes o misterios, que es un premio directo que da la máquina en caso de que la ruleta esté ganando más dinero del permitido. En eso, y solo en eso, se diferencian de las clásicas mesas del casino, además de las apuestas máximas, que en los salones se rigen por el máximo de premio permitido.
+    </p>
+    <br>
+    <br>
+    <img src="rl/rl11.jpg" width="949px" height="294px">
+
+  </div>
+
+  <div class="derecha">
+    <div class="anuncio">
+      <img src="imagen11.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="anuncio">
+      <img src="imagen12.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="anuncio">
+      <img src="imagen16.jpg">
+    </div>
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
